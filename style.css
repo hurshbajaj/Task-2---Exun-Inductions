@@ -1,0 +1,181 @@
+*{
+    font-family: Nunito;
+
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 35px;
+    margin: 0;
+    padding-top: 10px;
+    height: 100vh;
+
+    background-image: linear-gradient(to top, rgb(148, 219, 255) , white 30%);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+    margin-top: 16px;
+    
+}
+hr{
+    height: 3px;
+    background: linear-gradient(to right,rgba(51, 116, 227, 0.571) ,rgba(51, 227, 212, 0.571) 40%);
+    border: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: -35px;
+}
+.logo-name{
+    color: rgb(0, 125, 227);
+    font-size: 28px;
+
+    font-weight: 600;
+    
+}
+.logo--{
+    width: 30px;
+    margin-left: 15px;
+}
+.rightH{
+    display: flex;
+    align-items: center;
+}
+.pages{
+    margin-left: 15px;
+
+    color: rgb(18, 137, 235);
+
+    transition: opacity 200ms ease;
+}
+.pages:hover{
+    opacity: 0.6;
+
+    cursor: pointer;
+}
+.circle{
+
+    transition: background-image 300ms ease, background-position 300ms ease;
+
+    position: fixed;
+    bottom: -520px;
+    right: -300px;
+
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+
+    background-image: url("digital-art-girl-wearing-headphones-microphone_873925-8481.avif");
+
+    background-size: 600px;
+    background-position:30% -1%;
+
+    background-repeat:repeat;
+
+    
+    
+}
+.circle:hover{
+    cursor: pointor;
+    background-image: url("headphones2.jpg");
+    background-position:30% -15%;
+}
+
+.main-sect{
+    width: 60%;
+}
+.quote{
+    margin-top: 40px;
+    font-size: 35px;
+    color: rgba(12, 95, 163, 0.824);
+
+    font-style: oblique;
+
+    margin-bottom: 40px;
+    
+}
+.main-para{
+   margin-top: 40px;
+   color: rgb(7, 167, 211);
+   
+}
+.next{
+    padding:30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 15px;
+
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    font-style: normal;
+    background-color: rgb(41, 216, 216);
+
+    transition: transform 400ms ease;
+}
+.next:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+.chain{
+    display: flex;
+    justify-content: space-between;
+
+    width: 800px;
+    margin-top: 40px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 3px;
+    border-color: rgba(28, 123, 170, 0.502);
+    border-color:  rgba(51, 227, 212, 0.571);
+}
+.chain-elements{
+    font-size: 20px;
+    background-color: rgba(161, 208, 255, 0.667);
+    padding: 5px;
+    border-radius: 5px;
+
+    color: rgb(0, 145, 193);
+    
+}
+.o{
+    animation: chainAnim 700ms ease infinite;
+    animation-delay: 800ms;
+    
+}
+.e{
+    animation: chainAnim2 700ms ease infinite;
+    animation-delay: 1200ms;
+    
+}
+@keyframes chainAnim {
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.4;
+    }
+}
+@keyframes chainAnim2 {
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.6;
+    }
+}
+
