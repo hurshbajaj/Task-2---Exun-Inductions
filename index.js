@@ -16,6 +16,9 @@ submitBtn.onclick = function(){
         extra_input.placeholder = "Anything else you'd like to add?*";
     }
     if(name_input.value != "" && mail_input.value.includes("@") && extra_input.value != ""){
+        alert(`Name: ` + name_input.value);
+        alert(`Mail: `+mail_input.value);
+        alert(`Message: `+extra_input.value);
         submitBtn.href = "index3.html";
     }
     
